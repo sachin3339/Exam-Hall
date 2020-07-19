@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Exam-Hall": {
+    "bazooka": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/Exam-Hall",
+            "outputPath": "dist/bazooka",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -62,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "Exam-Hall:build"
+            "browserTarget": "bazooka:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "Exam-Hall:build:production"
+              "browserTarget": "bazooka:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Exam-Hall:build"
+            "browserTarget": "bazooka:build"
           }
         },
         "test": {
@@ -110,19 +110,19 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "Exam-Hall:serve"
+            "devServerTarget": "bazooka:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "Exam-Hall:serve:production"
+              "devServerTarget": "bazooka:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "Exam-Hall",
+  "defaultProject": "bazooka",
   "cli": {
-    "analytics": "ab315c44-c4ab-4c7d-a14c-402038e68b7d"
+    "analytics": false
   }
 }
